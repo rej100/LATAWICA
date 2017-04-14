@@ -12,7 +12,6 @@ public:
 	~MemoryManagment();
 
 	bool Initialize();
-	DWORD FindPattern(char *pattern, char *mask, DWORD moduleBaseAddr, int moduleSize);
 
 	template<class T>
 	inline T Read(DWORD address);
