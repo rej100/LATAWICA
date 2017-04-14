@@ -13,6 +13,7 @@ int main()
 	{
 		Sleep(300);
 	}
-	//lubieplacki
+	//lubieplacki Xddddddddd
+		//usuck
 	return 0;
 }
