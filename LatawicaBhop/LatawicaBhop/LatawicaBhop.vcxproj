@@ -29,7 +29,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -145,12 +145,13 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
+    <ClCompile Include="LatawicaBhop.cpp" />
+    <ClCompile Include="MemoryManagment.cpp" />
+    <ClCompile Include="Offsets.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LatawicaBhop.cpp" />
-    <ClCompile Include="stdafx.cpp" />
+    <ClInclude Include="MemoryManagment.h" />
+    <ClInclude Include="Offsets.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
