@@ -9,7 +9,15 @@ using std::endl;
 
 int main()
 {
-	cout << "1337" << endl;
+	MemoryManagment mem("csgo.exe");
+
+	cout << "Waiting for CS:GO..." << endl;
+
+	while (!mem.Initialize())
+	{
+		Sleep(300);
+	}
+
 	getchar();
     return 0;
 }

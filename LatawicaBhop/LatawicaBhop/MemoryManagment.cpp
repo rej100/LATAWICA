@@ -14,6 +14,7 @@ MemoryManagment::~MemoryManagment()
 
 bool MemoryManagment::Initialize() 
 {
+	processHWND = FindWindow(NULL, (LPCSTR)"Counter-Strike: Global Offensive");
 
 	if ((proccessHandle = GetProcessByName()) == NULL)
 		return false;

@@ -25,6 +25,7 @@ public:
 
 	int engineModuleSize;
 	DWORD engineModuleBase;
+	HWND processHWND;
 private:
 	char* proccessName;
 	HANDLE proccessHandle;
