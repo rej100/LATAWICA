@@ -3,23 +3,47 @@
 #include "MemoryManagment.h"
 #include "Offsets.h"
 #include "Utils.h"
+#include <thread>
+
+using std::thread;
+using std::cout;
+using std::endl;
 
 namespace BhopT
 {
-	void DoBhop(MemoryManagment mem)
+	bool jumped = false;
+	void DoBhop(MemoryManagment *mem)
 	{
-		while (true)
+		while (true) 
 		{
-			if ( (GetAsyncKeyState(VK_SPACE) & 0x8000) && !Utils::PlayerInAir())
-			{
-				
-			}
-			Sleep(1)
+				if ((GetAsyncKeyState(VK_SPACE) & 0x8000) && !Utils::PlayerInAir(mem)) 
+				{
+					SendMessage(mem -> processHWND, WM_KEYDOWN, VK_SPACE, 0x390000);
+					jumped = true;
+				}
+				else if ((GetAsyncKeyState(VK_SPACE) & 0x8000) && Utils::PlayerInAir(mem)) 
+				{
+					SendMessage(mem -> processHWND, WM_KEYUP, VK_SPACE, 0x390000);
+					if (jumped) 
+					{
+						Sleep(16);
+						SendMessage(mem->processHWND, WM_KEYDOWN, VK_SPACE, 0x390000);
+						SendMessage(mem->processHWND, WM_KEYUP, VK_SPACE, 0x390000);
+						jumped = false;
+					}
+				}
+				else 
+				{
+					Sleep(1);
+				}
 		}
 	}
 
-	void BhopInit(MemoryManagment mem)
+	void BhopInit(MemoryManagment *mem)
 	{
-
+		cout << "Configuring..." << endl;
+		Sleep(2000);
+		thread BhopThread(DoBhop, mem);
+		BhopThread.join();
 	}
 }

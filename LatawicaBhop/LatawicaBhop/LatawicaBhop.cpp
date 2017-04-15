@@ -3,6 +3,7 @@
 
 #include "MemoryManagment.h"
 #include "Offsets.h"
+#include "BhopT.h"
 
 using std::cout;
 using std::endl;
@@ -17,6 +18,8 @@ int main()
 	{
 		Sleep(300);
 	}
+
+	BhopT::BhopInit(&mem);
 
 	getchar();
     return 0;
