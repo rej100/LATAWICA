@@ -1,1 +1,2 @@
-Tylko pliki .cpp i .h s¹ wa¿ne.
+It's messy.
+pls fix
