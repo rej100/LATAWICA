@@ -1,2 +1,2 @@
-# LATAWICA
-Tooooooo LATAWICA
+# A simple auto Bhop for CSGO
+in C++
