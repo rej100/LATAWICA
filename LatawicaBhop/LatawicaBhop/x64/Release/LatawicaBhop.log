@@ -1,0 +1,13 @@
+﻿  LatawicaBhop.cpp
+LatawicaBhop.cpp(13): error C2664: „BOOL SetConsoleTitleW(LPCWSTR)”: nie można dokonać konwersji argumentu 1 z „LPCSTR” do „LPCWSTR”
+  LatawicaBhop.cpp(13): note: Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji
+  MemoryManagment.cpp
+MemoryManagment.cpp(17): error C2664: „HWND FindWindowW(LPCWSTR,LPCWSTR)”: nie można dokonać konwersji argumentu 2 z „LPCSTR” do „LPCWSTR”
+  MemoryManagment.cpp(17): note: Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji
+MemoryManagment.cpp(45): error C2664: „int _stricmp(const char *,const char *)”: nie można dokonać konwersji argumentu 1 z „WCHAR [260]” do „const char *”
+  MemoryManagment.cpp(45): note: Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji
+MemoryManagment.cpp(79): error C2664: „int _stricmp(const char *,const char *)”: nie można dokonać konwersji argumentu 1 z „WCHAR [256]” do „const char *”
+  MemoryManagment.cpp(79): note: Wskazane typy nie są powiązane; konwersja wymaga operatora reinterpret_cast, rzutowania w stylu języka C lub rzutowania w stylu funkcji
+MemoryManagment.cpp(83): warning C4311: "typ rzutowania": obcięcie wskaźnika z "BYTE *" do "DWORD"
+MemoryManagment.cpp(83): warning C4302: "typ rzutowania": obcięcie z "BYTE *" do "DWORD"
+  Offsets.cpp

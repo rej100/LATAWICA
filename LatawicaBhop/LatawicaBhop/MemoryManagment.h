@@ -1,6 +1,6 @@
 #pragma once
-#include <Windows.h>
-#include <tlhelp32.h>
+#include <windows.h>
+#include <TlHelp32.h>
 #include <iostream>
 #include <cstdlib>
 

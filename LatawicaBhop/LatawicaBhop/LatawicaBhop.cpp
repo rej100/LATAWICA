@@ -9,8 +9,7 @@ using std::cout;
 using std::endl;
 
 int main()
-{
-	SetConsoleTitle((LPCSTR)"300Bhop v1.5");
+{	SetConsoleTitle((LPCSTR)"300Bhop v1.5");
 	MemoryManagment mem("csgo.exe");
 
 	cout << "Waiting for CS:GO..." << endl;
@@ -19,7 +18,6 @@ int main()
 	{
 		Sleep(300);
 	}
-
 	BhopT::BhopInit(&mem);
 
 	getchar();

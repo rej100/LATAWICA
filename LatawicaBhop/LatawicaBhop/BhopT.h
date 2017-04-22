@@ -3,7 +3,8 @@
 #include "MemoryManagment.h"
 #include "Offsets.h"
 #include "Utils.h"
-#include <thread>
+#include "thread"
+#include "iostream"
 
 using std::thread;
 using std::cout;
@@ -43,7 +44,33 @@ namespace BhopT
 	{
 		cout << "Configuring..." << endl;
 		Sleep(2000);
+		cout << "Ready for Bhopping :)" << endl;
+		cout<<"Toggle Bhop (USE F1 & F2) ";
+		while (true)
+		{
+			if (GetAsyncKeyState(VK_F1) & 0x1)
+			{
+				system("cls");
+				cout << "Waiting for CS:GO..." << endl;
+				cout << "Configuring..." << endl;
+				cout << "Ready for Bhopping :)" << endl;
+				cout << "Toggle Bhop (USE F1) ";
+				cout << "ON" << endl;
+				Sleep(10);
+			}
+			if (GetAsyncKeyState(VK_F2) & 0x1)
+			{
+				system("cls");
+				cout << "Waiting for CS:GO..." << endl;
+				cout << "Configuring..." << endl;
+				cout << "Ready for Bhopping :)" << endl;
+				cout << "Toggle Bhop (USE F1) ";
+				cout << "OFF";
+				bool jumped = true;
+				Sleep(10);
+			}	}
 		thread BhopThread(DoBhop, mem);
 		BhopThread.join();
+		
 	}
 }
