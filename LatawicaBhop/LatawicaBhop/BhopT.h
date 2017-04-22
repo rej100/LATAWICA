@@ -71,6 +71,10 @@ namespace BhopT
 			}	}
 		thread BhopThread(DoBhop, mem);
 		BhopThread.join();
+<<<<<<< HEAD
 		
+=======
+		cout << "Done." << endl;
+>>>>>>> origin/master
 	}
 }

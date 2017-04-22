@@ -9,7 +9,12 @@ using std::cout;
 using std::endl;
 
 int main()
+<<<<<<< HEAD
 {	SetConsoleTitle((LPCSTR)"300Bhop v1.5");
+=======
+{
+	SetConsoleTitle((LPCSTR)"300Bhop v1.6");
+>>>>>>> origin/master
 	MemoryManagment mem("csgo.exe");
 
 	cout << "Waiting for CS:GO..." << endl;
