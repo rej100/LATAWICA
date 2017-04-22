@@ -45,5 +45,6 @@ namespace BhopT
 		Sleep(2000);
 		thread BhopThread(DoBhop, mem);
 		BhopThread.join();
+		cout << "Done." << endl;
 	}
 }
