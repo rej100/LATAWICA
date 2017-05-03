@@ -82,7 +82,7 @@ namespace BhopT
 		cout << "Configuring..." << endl;
 		Sleep(2000);
 		cout << "Ready for Bhopping :)" << endl;
-		cout << "Toggle bhop F1 ";
+		cout << "Toggle bhop F1 ON";
 		thread ToggleR(ToggleL);
 		thread BhopThread(DoBhop, mem);
 		ToggleR.join();
