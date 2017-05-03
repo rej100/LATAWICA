@@ -10,7 +10,7 @@ using std::endl;
 
 int main()
 {
-	SetConsoleTitle((LPCSTR)"300Bhop v1.8 +Toggle");
+	SetConsoleTitle((LPCSTR)"300Bhop v1.9 +Toggle");
 
 	MemoryManagment mem("csgo.exe");
 

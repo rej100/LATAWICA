@@ -2,9 +2,9 @@
 
 namespace Offsets {
 
-	DWORD LocalPlayer = 0xAB26DC;
+	DWORD LocalPlayer = 0xAB2704;
 	DWORD ObjBase;
-	DWORD EntityList = 0x4AD5B84;
+	DWORD EntityList = 0x4AD5C24;
 
 
 	DWORD health = 0xFC;
@@ -17,10 +17,10 @@ namespace Offsets {
 	DWORD crossId = 0xAA70;
 	DWORD glowIndex = 0xA320;
 	DWORD flags = 0x100;
-	DWORD forceJump = 0x4F6C7A8;
+	DWORD forceJump = 0x4F6C854;
 	DWORD boneMatrix = 0x2698;
 	DWORD viewOffset = 0x104;
-	DWORD clientState = 0x5CF574;
+	DWORD clientState = 0x5CC574;
 	DWORD viewAngles = 0x4D0C;
 
 }
