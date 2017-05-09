@@ -13,6 +13,15 @@ using std::endl;
 namespace BhopT
 {
 	bool jumped = false;
+
+	void Toggle()
+	{
+		while (true)
+		{
+
+		}
+	}
+
 	void DoBhop(MemoryManagment *mem)
 	{
 		while (true) 
@@ -43,8 +52,9 @@ namespace BhopT
 	void BhopInit(MemoryManagment *mem)
 	{
 		cout << "Configuring..." << endl;
+		Utils::bhopOn = true;
 		Sleep(2000);
-		cout << "Ready for Bhopping :)" << endl;
+		cout << "Ready to Bhop :)" << endl;
 
 		thread BhopThread(DoBhop, mem);
 		BhopThread.join();
