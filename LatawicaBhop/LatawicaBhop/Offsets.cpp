@@ -2,7 +2,7 @@
 
 namespace Offsets {
 
-	DWORD LocalPlayer = 0xAB26EC;
+	DWORD LocalPlayer = 0xAB26DC;
 	DWORD ObjBase;
 	DWORD EntityList = 0x4AD5B84;
 
