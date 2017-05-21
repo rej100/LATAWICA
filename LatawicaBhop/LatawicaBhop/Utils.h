@@ -14,4 +14,5 @@ namespace Utils
 		
 		return flag == 256 || flag == 258 || flag == 260 || flag == 262;
 	}
+	bool bhopOn;
 }

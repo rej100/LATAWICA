@@ -1,8 +1,9 @@
-﻿  Offsets.cpp
+﻿  LatawicaBhop.cpp
   Trwa generowanie kodu
-  0 of 129 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  1 of 131 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     6 functions had inline decision re-evaluated but remain unchanged
   Zakończono generowanie kodu
+MemoryManagment.obj : warning LNK4099: nie znaleziono pliku PDB „vc141.pdb” z elementem „MemoryManagment.obj” lub w pozycji „C:\Users\Michał Lata\Documents\GitHub\LATAWICA-master\LATAWICA\LatawicaBhop\Release\vc141.pdb”; obiekt zostanie skonsolidowany bez informacji debugowania
   LatawicaBhop.vcxproj -> C:\Users\Michał Lata\Documents\GitHub\LATAWICA-master\LATAWICA\LatawicaBhop\Release\LatawicaBhop.exe
   LatawicaBhop.vcxproj -> C:\Users\Michał Lata\Documents\GitHub\LATAWICA-master\LATAWICA\LatawicaBhop\Release\LatawicaBhop.pdb (Full PDB)

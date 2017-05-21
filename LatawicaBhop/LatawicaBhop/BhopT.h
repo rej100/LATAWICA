@@ -12,6 +12,27 @@ using std::endl;
 
 namespace BhopT
 {
+	void on()
+	{
+		system("cls");
+		cout << "Waiting for CS:GO..." << endl;
+		cout << "Configuring..." << endl;
+		cout << "Ready for Bhopping :)" << endl;
+		cout << "Toggle bhop F1 ";
+		cout << "ON";
+	}
+
+	void off()
+	{
+		system("cls");
+		cout << "Waiting for CS:GO..." << endl;
+		cout << "Configuring..." << endl;
+		cout << "Ready for Bhopping :)" << endl;
+		cout << "Toggle bhop F1 ";
+		cout << "OFF";
+	}
+
+
 	bool jumped = false;
 
 	bool toggle = true;
@@ -25,22 +46,12 @@ namespace BhopT
 				if (toggle)
 				{
 					toggle = false;
-					system("cls");
-					cout << "Waiting for CS:GO..." << endl;
-					cout << "Configuring..." << endl;
-					cout << "Ready for Bhopping :)" << endl;
-					cout << "Toggle bhop F1 ";
-					cout << "OFF";
-					}
+					off();
+				}
 				else if (!toggle)
 				{
 					toggle = true;
-					system("cls");
-					cout << "Waiting for CS:GO..." << endl;
-					cout << "Configuring..." << endl;
-					cout << "Ready for Bhopping :)" << endl;
-					cout << "Toggle bhop F1 ";
-					cout << "ON";
+					on();
 				}
 			}
 		}
@@ -80,6 +91,7 @@ namespace BhopT
 	void BhopInit(MemoryManagment *mem)
 	{
 		cout << "Configuring..." << endl;
+		Utils::bhopOn = true;
 		Sleep(2000);
 		cout << "Ready for Bhopping :)" << endl;
 		cout << "Toggle bhop F1 ON";
