@@ -10,7 +10,7 @@ namespace Utils
 	bool PlayerInAir(MemoryManagment *mem)
 	{
 		playerBase = mem->Read<int>( (mem->clientModuleBase + Offsets::LocalPlayer) );
-		flag = mem->Read<int>( (playerBase + Offsets::flags) );
+		flag = mem->Read<int>((playerBase + Offsets::flags));
 		
 		return flag == 256 || flag == 258 || flag == 260 || flag == 262;
 	}

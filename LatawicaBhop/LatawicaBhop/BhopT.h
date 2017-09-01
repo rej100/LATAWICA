@@ -3,8 +3,6 @@
 #include "MemoryManagment.h"
 #include "Offsets.h"
 #include "Utils.h"
-#include <thread>
-#include <iostream>
 
 using std::thread;
 using std::cout;
@@ -16,20 +14,20 @@ namespace BhopT
 	{
 		system("cls");
 		cout << "Waiting for CS:GO..." << endl;
-		cout << "Configuring..." << endl;
-		cout << "Ready for Bhopping :)" << endl;
-		cout << "Toggle bhop F1 ";
-		cout << "ON";
+		cout << "Initializing..." << endl;
+		cout << "Initialized." << endl;
+		cout << "Ready to bhop!" << endl;
+		cout << "Toggle bhop (F1) -> ON";
 	}
 
 	void off()
 	{
 		system("cls");
 		cout << "Waiting for CS:GO..." << endl;
-		cout << "Configuring..." << endl;
-		cout << "Ready for Bhopping :)" << endl;
-		cout << "Toggle bhop F1 ";
-		cout << "OFF";
+		cout << "Initializing..." << endl;
+		cout << "Initialized." << endl;
+		cout << "Ready to bhop!" << endl;
+		cout << "Toggle bhop (F1) -> OFF";
 	}
 
 
@@ -90,11 +88,11 @@ namespace BhopT
 
 	void BhopInit(MemoryManagment *mem)
 	{
-		cout << "Configuring..." << endl;
 		Utils::bhopOn = true;
-		Sleep(2000);
-		cout << "Ready for Bhopping :)" << endl;
-		cout << "Toggle bhop F1 ON";
+		cout << "Initializing..." << endl;
+		cout << "Initialized." << endl;
+		cout << "Ready to bhop!" << endl;
+		cout << "Toggle bhop (F1) -> ON";
 		thread ToggleR(ToggleL);
 		thread BhopThread(DoBhop, mem);
 		ToggleR.join();
